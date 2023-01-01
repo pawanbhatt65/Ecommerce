@@ -1,0 +1,50 @@
+.Virtual {
+  margin-top: 6rem;
+  margin-bottom: 6rem;
+  padding: 2rem;
+  display: flex;
+  justify-content: space-around;
+}
+.left {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  position: relative;
+}
+.left span {
+  text-transform: uppercase;
+  display: block;
+  width: 20rem;
+  font-size: 1.6rem;
+}
+.left > :nth-child(1) {
+  font-weight: bold;
+  font-size: 2rem;
+  width: unset;
+}
+.left > :nth-child(3) {
+  font-weight: bold;
+}
+.left > img {
+  position: absolute;
+  bottom: 3rem;
+  width: 10rem;
+}
+
+.wrapper {
+  width: 30rem;
+}
+
+@media screen and (max-width: 992px) {
+  .Virtual {
+    gap: 1rem;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    flex-direction: column;
+    padding: 1rem;
+  }
+}
